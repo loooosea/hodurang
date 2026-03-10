@@ -1,26 +1,125 @@
 @import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css");
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  /* Colors */
+  --color-orange-50: #FFF3ED;
+  --color-orange-100: #FFE4D4;
+  --color-orange-200: #FFC5A8;
+  --color-orange-300: #FFA070;
+  --color-orange-400: #FF6B35;
+  --color-orange-500: #F04E1A;
+  --color-orange-600: #D63A10;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  --color-warm-50: #FFFDF9;
+  --color-warm-100: #FFF8F0;
+  --color-warm-200: #FFEFD9;
+  --color-warm-300: #F5E6D3;
+  --color-warm-400: #D4A574;
+  --color-warm-500: #B8895A;
+  --color-warm-600: #8B6914;
+
+  --color-dark: #2D2D2D;
+  --color-dark-light: #4A4A4A;
+  --color-cream: #FFF8F0;
+  --color-cream-dark: #F5E6D3;
+
+  /* Fonts */
+  --font-sans: "Pretendard Variable", "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+  --font-pixel: var(--font-pixel);
+  --font-pixel-body: var(--font-pixel-body);
+
+  /* Shadows */
+  --shadow-pixel: 4px 4px 0 #D4A574;
+  --shadow-pixel-dark: 4px 4px 0 #2D2D2D;
+  --shadow-pixel-orange: 4px 4px 0 #FF6B35;
+  --shadow-pixel-sm: 2px 2px 0 #D4A574;
+  --shadow-pixel-lg: 6px 6px 0 #D4A574;
+
+  /* Animations */
+  --animate-float: float 3s ease-in-out infinite;
+  --animate-pixel-pulse: pixel-pulse 2s steps(4) infinite;
+  --animate-bounce-slow: bounce-slow 2s ease-in-out infinite;
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+  @keyframes pixel-pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+  }
+
+  @keyframes bounce-slow {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
   }
 }
 
+/* Base styles */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #FFFDF9;
+  color: #2D2D2D;
+  font-family: "Pretendard Variable", "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Pixel border utility */
+.pixel-border {
+  border: 3px solid #2D2D2D;
+  box-shadow: 4px 4px 0 #D4A574;
+}
+
+.pixel-border-orange {
+  border: 3px solid #2D2D2D;
+  box-shadow: 4px 4px 0 #FF6B35;
+}
+
+/* Pixel clip-path for featured cards */
+.pixel-clip {
+  clip-path: polygon(
+    0 4px, 4px 4px, 4px 0,
+    calc(100% - 4px) 0, calc(100% - 4px) 4px, 100% 4px,
+    100% calc(100% - 4px), calc(100% - 4px) calc(100% - 4px),
+    calc(100% - 4px) 100%, 4px 100%, 4px calc(100% - 4px),
+    0 calc(100% - 4px)
+  );
+}
+
+/* Dot grid background */
+.dot-grid {
+  background-image: radial-gradient(circle, #D4A574 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Pixel step transition */
+.pixel-transition {
+  transition: all 0.15s steps(3);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFF8F0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D4A574;
+  border: 2px solid #2D2D2D;
+}
+
+/* Selection color */
+::selection {
+  background: #FF6B35;
+  color: white;
 }
