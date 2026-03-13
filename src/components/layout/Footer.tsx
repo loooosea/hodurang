@@ -42,9 +42,8 @@ export default function Footer() {
             <p>
               {info.corpName} | 대표 {info.ceo}
             </p>
-            <p>
-              사업자등록번호 {info.bizNumber} | 통신판매업신고 {info.salesNumber}
-            </p>
+            <p>사업자등록번호 {info.bizNumber}</p>
+            <p>통신판매업신고 {info.salesNumber}</p>
             <p>{info.address}</p>
             <p>
               이메일{" "}
@@ -53,9 +52,9 @@ export default function Footer() {
                 className="hover:text-orange-400 pixel-transition"
               >
                 {info.email}
-              </a>{" "}
-              | 고객센터 {info.csHours}
+              </a>
             </p>
+            <p>고객센터 {info.csHours}</p>
             <p>개인정보보호책임자 {info.privacyOfficer}</p>
           </div>
         </div>
