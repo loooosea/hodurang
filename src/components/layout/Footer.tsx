@@ -23,13 +23,15 @@ export default function Footer() {
 
           <div className="flex gap-6">
             {FOOTER.links.map((link) => (
-              <Link
+              <a
                 key={link.label}
                 href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-sm text-gray-400 hover:text-orange-400 pixel-transition"
               >
                 {link.label}
-              </Link>
+              </a>
             ))}
           </div>
         </div>

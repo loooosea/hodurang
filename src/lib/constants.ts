@@ -224,9 +224,9 @@ export const FOOTER = {
     csHours: "평일 10:00-16:00",
   },
   links: [
-    { label: "이용약관", href: "/terms" },
-    { label: "개인정보처리방침", href: "/privacy" },
-    { label: "문의하기", href: "mailto:contact@agoldenwalnut.com" },
+    { label: "이용약관", href: "https://vivid-sternum-af9.notion.site/bc32c1e55ef1461e962e31c642516951?source=copy_link" },
+    { label: "개인정보처리방침", href: "https://vivid-sternum-af9.notion.site/e814d5c8f1804979820d6607b0016e05?source=copy_link" },
+    { label: "문의하기", href: "http://pf.kakao.com/_xfPxjxoG/chat" },
   ],
   copyright: `© ${new Date().getFullYear()} 골든월넛 주식회사. All rights reserved.`,
 };
