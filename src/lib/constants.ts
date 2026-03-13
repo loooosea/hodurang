@@ -213,10 +213,20 @@ export const FOOTER = {
   description: "기억을 저장하고 퀴즈로 되살리는 두뇌 건강 플랫폼",
   disclaimer:
     "호두랑은 의료 기기가 아니며, 질병의 진단·치료·예방을 목적으로 하지 않습니다. 기억력에 대한 우려가 있으시면 전문 의료기관과 상담하시기 바랍니다.",
+  businessInfo: {
+    corpName: "골든월넛 주식회사",
+    ceo: "이은영",
+    bizNumber: "794-88-03231",
+    salesNumber: "제2026-서울관악-0044호",
+    address: "서울시 관악구 호암로24길 6, 204호",
+    email: "contact@agoldenwalnut.com",
+    privacyOfficer: "이은영",
+    csHours: "평일 10:00-16:00",
+  },
   links: [
     { label: "이용약관", href: "/terms" },
     { label: "개인정보처리방침", href: "/privacy" },
-    { label: "문의하기", href: "mailto:hello@hodurang.com" },
+    { label: "문의하기", href: "mailto:contact@agoldenwalnut.com" },
   ],
-  copyright: `© ${new Date().getFullYear()} 호두랑. All rights reserved.`,
+  copyright: `© ${new Date().getFullYear()} 골든월넛 주식회사. All rights reserved.`,
 };
