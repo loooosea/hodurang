@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { NAV_LINKS, CTA_HREF } from "@/lib/constants";
@@ -19,7 +18,8 @@ export default function Navigation() {
       <nav className="mx-auto max-w-6xl flex items-center justify-between px-4 sm:px-6 h-16">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
-          <Image
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
             src="/images/logos/icon.png"
             alt="호두랑"
             width={32}

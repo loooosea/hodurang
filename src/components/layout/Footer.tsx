@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { FOOTER } from "@/lib/constants";
 
@@ -11,7 +10,8 @@ export default function Footer() {
         {/* Brand + Links */}
         <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-8">
           <div className="flex items-center gap-2">
-            <Image
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
               src="/images/logos/icon.png"
               alt="호두랑"
               width={28}
