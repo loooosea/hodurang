@@ -10,7 +10,7 @@ export const CTA_TEXT = "호두랑 타임캡슐에 저장하고 퀴즈로 받아
 export const CTA_HREF = "/record";
 
 export const HERO = {
-  badge: "뇌 건강 플랫폼",
+  badge: "두뇌 건강 플랫폼",
   headline: "소중한 기억,\n호두랑이 지켜드릴게요",
   subheadline:
     "추억을 타임캡슐에 기록하면 AI가 퀴즈로 만들어 드려요.\n기억은 즐겁게 관리하는 거예요.",
@@ -210,7 +210,7 @@ export const FINAL_CTA = {
 
 export const FOOTER = {
   company: "호두랑",
-  description: "기억을 저장하고 퀴즈로 되살리는 뇌 건강 플랫폼",
+  description: "기억을 저장하고 퀴즈로 되살리는 두뇌 건강 플랫폼",
   disclaimer:
     "호두랑은 의료 기기가 아니며, 질병의 진단·치료·예방을 목적으로 하지 않습니다. 기억력에 대한 우려가 있으시면 전문 의료기관과 상담하시기 바랍니다.",
   links: [
